@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tesla News View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="TeslaNewsViewController" id="Y6W-OH-hqX" customClass="TeslaNewsViewController" customModule="RioDailyNews" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="101304060-72ff5b00-380d-11eb-8c58-a3172d791c9c 1" translatesAutoresizingMaskIntoConstraints="NO" id="BVE-Y2-bpq">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="818"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="sbz-Cd-g9S">
+                                <rect key="frame" x="0.0" y="109" width="393" height="709"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KsV-Ri-BjU">
+                                <rect key="frame" x="14" y="58" width="48" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="zA0-G9-IdF"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="group13"/>
+                                <connections>
+                                    <action selector="btnaction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="oYR-Wr-8Xt"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tesla News" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VJd-Kb-MGz">
+                                <rect key="frame" x="72" y="67" width="261" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="VJd-Kb-MGz" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="8" id="37N-6I-Txr"/>
+                            <constraint firstItem="KsV-Ri-BjU" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="58" id="Ae7-bs-85B"/>
+                            <constraint firstItem="VJd-Kb-MGz" firstAttribute="leading" secondItem="KsV-Ri-BjU" secondAttribute="trailing" constant="10" id="Ove-D4-hal"/>
+                            <constraint firstItem="BVE-Y2-bpq" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Q7E-cf-Z3O"/>
+                            <constraint firstItem="sbz-Cd-g9S" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="50" id="Qmf-zv-TLr"/>
+                            <constraint firstItem="sbz-Cd-g9S" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="R9E-D8-V8z"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="sbz-Cd-g9S" secondAttribute="trailing" id="SkM-aW-fwe"/>
+                            <constraint firstItem="BVE-Y2-bpq" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="-59" id="T6B-HJ-mdM"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="VJd-Kb-MGz" secondAttribute="trailing" constant="60" id="glF-Kj-yX4"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="sbz-Cd-g9S" secondAttribute="bottom" id="nUM-rB-au0"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="BVE-Y2-bpq" secondAttribute="bottom" id="oOy-nc-IDR"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="BVE-Y2-bpq" secondAttribute="trailing" id="rSG-jK-e7C"/>
+                            <constraint firstItem="sbz-Cd-g9S" firstAttribute="top" secondItem="VJd-Kb-MGz" secondAttribute="bottom" constant="21" id="uwX-HW-hCa"/>
+                            <constraint firstItem="KsV-Ri-BjU" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="14" id="wku-hS-hIC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="sbz-Cd-g9S" id="ex7-I6-bf2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="98.473282442748086" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="101304060-72ff5b00-380d-11eb-8c58-a3172d791c9c 1" width="880" height="660"/>
+        <image name="group13" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
